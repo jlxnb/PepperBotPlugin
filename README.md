@@ -8,7 +8,7 @@
 2. 关键词回复：检测到群内关键词，回复对应信息
 3. ~~入群欢迎：检测到入群自动欢迎(暂时无法@进群者)~~
 4. 执行命令：如果被设置为管理员，可设置QQ群内设置自动回复
-5. API：将本插件作为依赖，可使用'AsyncQQMessageEvent'等事件监听聊天信息，使用'sendQQMessage'方法来发送信息(具体参考(OPQAPI)[https://apifox.com/apidoc/shared-72cecf14-815e-4238-82a5-6c68d006fd00] )
+5. API：将本插件作为依赖，可使用'AsyncQQMessageEvent'等事件监听聊天信息，使用'sendQQMessage'方法来发送信息(具体参考[OPQAPI](https://apifox.com/apidoc/shared-72cecf14-815e-4238-82a5-6c68d006fd00) )
 
 ## 注意事项
 
