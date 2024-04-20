@@ -3,11 +3,11 @@ ServerName: 'PepperBotServer'
 #OPQ服务器地址
 Address: '127.0.0.1:8086'
 #机器人QQ号
-QQCode: 501824095
+QQCode: 114514
 #管理员QQ
-AdminQQCode: 501824095
+AdminQQCode: 1919810
 #自动回复的群
-GroupCode: 232449991
+GroupCode: 1145141919810
 #TrChat 你要同步的频道
 EnabledChannel: 'Normal'
 #关键词回复
