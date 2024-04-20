@@ -1,6 +1,6 @@
 # PepperBotPlugin
 
-一个基于OPQBot&Bukkit的QQ机器人插件*（半成品）*
+一个基于OPQBot&Bukkit的QQ机器人插件 _（半成品）_
 
 ## 功能
 
