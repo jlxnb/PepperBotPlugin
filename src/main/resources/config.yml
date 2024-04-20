@@ -1,0 +1,31 @@
+#服务器名 用于{server}变量
+ServerName: 'PepperBotServer'
+#OPQ服务器地址
+Address: '127.0.0.1:8086'
+#机器人QQ号
+QQCode: 501824095
+#管理员QQ
+AdminQQCode: 501824095
+#自动回复的群
+GroupCode: 232449991
+#TrChat 你要同步的频道
+EnabledChannel: 'Normal'
+#关键词回复
+KeywordReply:
+  '?' : '???'
+  '傻逼': '你也一样'
+  '滚': '滚滚滚!'
+  '6': '66666'
+  '原神': '原神怎么你了'
+  '欢迎': '欢迎欢迎~'
+  'nb': 'nbnb'
+  '牛逼': '牛逼牛逼'
+  '你好,陌生人': 'GRW团队招生啦!'
+  '草': '大草'
+Pattern:
+  QQ2Game: "&7[&3QQ&7] &b{name} &7:&f{message}"
+  Game2QQ: "[{server}] {name}:{message}"
+  PlayerJoin: "{name}上线了"
+  PlayerLeave: "{name}下线了"
+  Welcome: "欢迎{name}入群!"
+  PlayerDeath: "{name}死了:{message}"

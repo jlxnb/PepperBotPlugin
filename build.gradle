@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.github.johnrengelman:shadow:8.1.1'
+    }
+}
+plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'java'
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"        //这里最好选择UTF-8
+}
+shadowJar{
+    manifest {
+        attributes 'Main-Class': 'org.eu.pcraft.Main'
+    }
+}
+group = 'org.eu.pcraft'
+version = '1.0-SNAPSHOT'
+
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repo.papermc.io/repository/maven-public/"
+    }
+    maven {
+        url "https://repo.extendedclip.com/content/repositories/placeholderapi/"
+    }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    compileOnly "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT"
+    compileOnly 'me.clip:placeholderapi:2.11.5'
+    compileOnly(fileTree(dir: 'libs', include: '*.jar'))
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+java{
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}

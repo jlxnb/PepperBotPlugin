@@ -1,0 +1,8 @@
+name: PepperBot
+version: '${version}'
+main: org.eu.pcraft.PepperBotPlugin
+api-version: '1.16'
+depend:
+  - TrChat
+softdepend:
+  - PlaceHolderAPI
