@@ -17,6 +17,7 @@ shadowJar{
     manifest {
         attributes 'Main-Class': 'org.eu.pcraft.Main'
     }
+    relocate("de.tr7zw.changeme.nbtapi", "YOUR PACKAGE WHERE THE API SHOULD END UP")
 }
 group = 'org.eu.pcraft'
 version = '1.0-SNAPSHOT'
@@ -32,6 +33,7 @@ repositories {
     maven {
         url "https://repo.extendedclip.com/content/repositories/placeholderapi/"
     }
+
 }
 
 dependencies {
@@ -48,6 +50,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+build {
+    dependsOn(shadowJar)
 }
 
 java{
