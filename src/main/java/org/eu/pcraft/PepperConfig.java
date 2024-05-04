@@ -34,6 +34,7 @@ public class PepperConfig {
         pattern.playerDeath=subConf.getString("PlayerDeath");
 
     }
+    //test
     public boolean isPAPILoaded;
     public Map<String,String> replyMap=new HashMap<>();
     public String address;
